@@ -1,7 +1,7 @@
 
 > arrancar servidor en npm
 Abrir la consola en la carpeta raíz del proyecto a arrancar como servidor web
-$ npm install node-static
+$ npm install -g node-static
 static -p 8000
 
 Curso de css:

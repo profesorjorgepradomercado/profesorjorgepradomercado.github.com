@@ -1,15 +1,163 @@
-p{
-  color: red;
+html{
+  /* font-family: 'Edu NSW ACT Foundation', cursive; */
 }
-.un-div{
-  background-color: red;
-  width: 200px;
-  height: 300px;
-}
-#btn-pago{
-  background-color: green;
+a{
+  text-decoration: underline;
+  color: #6DD5FA;
 }
 
-td{
-  border: 1px solid blue;
+a:hover{
+  opacity: 0.5;
 }
+
+img{
+  max-width: 100%;
+}
+
+.container{
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  background-color: white;
+  max-width: 960px;
+  /* max-height: 500px; */
+  width: 100%;
+  /* height: 100%; */
+  height: 80vh;
+  border-radius: 6px;
+  position: relative;
+  
+  overflow: scroll;
+}
+
+/* Primero se escribe el código para las pantallas chicas y luego con
+media querys se adapta para pantallas grandes. */
+.content{
+  padding: 1em;
+}
+td{
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color:#642B73
+}
+th{
+  display: none;
+}
+
+.actions{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close{
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #642B73;
+  display: inline-block;
+  box-shadow: 0 3px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.parrafo{
+  line-height: 1.8em;
+  font-weight: 400;
+}
+
+.tabla{
+  width: 100%;
+  text-align: left;
+  border-spacing: 0;
+}
+
+.tabla td, .tabla th{
+  padding: 1em;
+}
+
+.tabla tr:nth-child(even){
+  background-color: #f3e5f5;
+}
+
+.fa-solid{
+  color: #ffc400;
+}
+
+.titulo{
+  text-align: center;
+}
+
+.position{
+  background-color: #ffc400;
+  color: white;
+  width: 3em;
+  height: 80px;
+  border-radius: 4px;
+  padding: 6px;
+  margin-left: 10px;
+  margin-right: 0.5em;
+}
+
+@media (min-height:550px){
+  .content{
+    height: 500px;
+  }
+}
+
+@media(min-width:900px){
+  th{
+    display: table-cell;
+  }
+  td{
+    display: table-cell;
+    width: auto;
+  }
+  td:nth-of-type(1){
+    font-size: 1em;
+  }
+  .content{
+    padding: 1.8em;
+  }
+}
+
+.titulo-item{
+  border-bottom: #C6426E solid 2px;
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+
+.address{
+  font-weight: bold;
+  color: #642B73;
+  font-size: 1.2em;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.main-image{
+  float: left;
+  margin-right: 1em;
+  /* height: 600px; */
+  width: 400px;
+}
+
+/* td{
+  border: 1px solid blue;
+} */
